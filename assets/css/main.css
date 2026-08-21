@@ -8,11 +8,21 @@
 */
 
 :root {
---white: #fff;
---bg-gray: #ccc;
+--text-gray: #8d9198;
+--text-light-gray: oklab(82.968% 0 -0.00009);
+--white: oklab(100% 0 -0.00011);
+--bg-gray: oklab(84.52199999999999% 0 -0.0001);
+--bg-light-gray: #f3f3f3;
 --bg-secondary: #6072d9;
 --bg-tertiary: #0ab142;
 --bg-primary: #70abe9;
+--gradient-1:   oklab(11.1% 0.014 -0.053);
+--gradient-2: oklab(21.128% 0.02487 -0.09611);
+--gradient-3: oklab(31.6% 0.065 -0.106);
+--gradient-4:  oklab(50.160000000000004% -0.02057 -0.08331);
+--gradient-5: oklab(76.753% -0.02159 -0.06445);
+--angle: 45deg;
+--gradient: oklab(11.1% 0.014 -0.053), oklab(21.128% 0.02487 -0.09611), oklab(31.6% 0.065 -0.106), oklab(50.160000000000004% -0.02057 -0.08331), oklab(76.753% -0.02159 -0.06445);
 }
 
 
@@ -109,7 +119,7 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 400;
-		color: #919499;
+		color: var(--text-light-gray);
 		font-size: 14pt;
 		line-height: 1.75em;
 		letter-spacing: 0.025em;
@@ -117,7 +127,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
-		color: #484d55;
+		color: var(--text-gray);
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -140,7 +150,7 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 700;
-		color: #484d55;
+		color: var(--text-gray);
 	}
 
 	blockquote {
@@ -1506,7 +1516,7 @@ input, select, textarea {
 			}
 
 			table.default thead {
-				background: #484d55;
+				background: var(--text-gray);
 				color: var(--white);
 			}
 
@@ -1664,7 +1674,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: var(--bg-tertiary);
+			background-color: var(--gradient-2);
 		}
 
 		input[type="button"].large,
@@ -1681,7 +1691,7 @@ input, select, textarea {
 		input[type="reset"].style1,
 		button.style1,
 		.button.style1 {
-			background: var(--bg-primary) url("images/overlay.png");
+			background: var(--bg-primary);
 			color: var(--white);
 		}
 
@@ -1690,7 +1700,7 @@ input, select, textarea {
 			input[type="reset"].style1:hover,
 			button.style1:hover,
 			.button.style1:hover {
-				background-color: var(--bg-tertiary);
+				background-color: var(--gradient-2);
 			}
 
 			input[type="button"].style1:active,
@@ -1732,7 +1742,7 @@ input, select, textarea {
 		input[type="reset"].style3,
 		button.style3,
 		.button.style3 {
-			background: #2f333b url("images/overlay.png");
+			background: #2f333b;
 			color: var(--white);
 		}
 
@@ -1868,7 +1878,7 @@ input, select, textarea {
 			.feature-list h3:before {
 				display: block;
 				color: var(--white);
-				background: #2f333b url("images/overlay.png");
+				background: #2f333b;
 				border-radius: 2.5em;
 				text-align: center;
 				width: 2.5em;
@@ -2011,13 +2021,13 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background: var(--bg-primary) url("images/overlay.png");
+			background: var(--gradient-1);
 			color: #eee;
 			color: rgba(255, 255, 255, 0.75);
 		}
 
 			.wrapper.style1 .title {
-				background: var(--bg-primary) url("images/overlay.png");
+				background: var(--gradient-1);
 				color: var(--white);
 			}
 
@@ -2026,21 +2036,21 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background: var(--white);
+			background: var(--gradient-1);
 		}
 
 			.wrapper.style2 .title {
-				background: var(--white);
-				color: #484d55;
+				background: linear-gradient(var(--angle), var(--gradient-1));
+				color: var(--white);
 			}
 
 		.wrapper.style3 {
-			background: #f3f3f3 url("images/overlay.png");
+			background: var(--gradient-3);
 		}
 
 			.wrapper.style3 .title {
-				background: #f3f3f3 url("images/overlay.png");
-				color: #484d55;
+				background: var(--gradient-3);
+				color: var(--white);
 			}
 
 			.wrapper.style3 .image {
@@ -2070,7 +2080,7 @@ input, select, textarea {
 		justify-content: center;
 		position: relative;
 		height: 24em;
-		background: url("../../images/banner.jpg") center center;
+		background: var(--bg-secondary);
 		background-size: cover;
 		padding: 0;
 	}
@@ -2082,7 +2092,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background: url("images/overlay.png");
+			background: linear-gradient(var(--angle), var(--gradient));
 		}
 
 		.homepage #header {
@@ -2171,7 +2181,7 @@ input, select, textarea {
 				}
 
 	.dropotron {
-		background: #222835 url("images/overlay.png");
+		background: #222835;
 		background-color: rgba(44, 50, 63, 0.925);
 		padding: 1.25em 1em 1.25em 1em;
 		border-radius: 0.35em;
@@ -2281,7 +2291,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #282b34 url("images/overlay.png");
+		background: #282b34;
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
 		padding-bottom: 6em;
@@ -2348,7 +2358,7 @@ input, select, textarea {
 			}
 
 		#footer .title {
-			background: #282b34 url("images/overlay.png");
+			background: #282b34;
 			color: #eee;
 		}
 
@@ -2375,7 +2385,7 @@ input, select, textarea {
 			}
 
 			#footer .feature-list h3:before {
-				background: #3d4249 url("images/overlay.png");
+				background: #3d4249 ;
 			}
 
 /* Copyright */
@@ -2680,7 +2690,7 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #242730 url("images/overlay.png");
+				background: #242730;
 				box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
 			}
 
