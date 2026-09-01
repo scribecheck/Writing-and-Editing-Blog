@@ -7,6 +7,18 @@ Landing Page (Home)
 Page 2
 Writing Portfolio (No Sidebar)
 
+Own the space.
+Define your voice.
+
+Commercial Copywriting:
+Connect with your readers / on a human level.
+Bring them into your world with personal, memorable copy that speaks with your brand's unique voice.
+
+Portfolio:
+Travel & Tourism
+History & Culture
+Work Culture & Diversity
+
 
 Page 3
 Editing Services (Right Sidebar Style)
@@ -17,4 +29,4 @@ Editing Services (Right Sidebar Style)
 	* info & rates
 
 Page 4
-Blog (Right Sidebar)
+Blog (Left Sidebar)

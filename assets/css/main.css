@@ -18,7 +18,7 @@
 --bg-primary: #70abe9;
 --gradient-1:   oklab(11.1% 0.014 -0.053);
 --gradient-2: oklab(21.128% 0.02487 -0.09611);
---gradient-3: oklab(31.6% 0.065 -0.106);
+--gradient-3: oklab(30.075000000000003% 0.04347 -0.11431);
 --gradient-4:  oklab(50.160000000000004% -0.02057 -0.08331);
 --gradient-5: oklab(76.753% -0.02159 -0.06445);
 --angle: 45deg;
@@ -1612,6 +1612,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			border-radius: 5px;
 		}
 
 		.image.fit {
@@ -2054,7 +2055,8 @@ input, select, textarea {
 			}
 
 			.wrapper.style3 .image {
-				border: solid 10px var(--white);
+				border: solid 5px var(--white);
+				border-radius: 10px;
 			}
 
 /* Page Wrapper */
