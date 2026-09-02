@@ -8,8 +8,8 @@
 */
 
 :root {
---text-gray: #8d9198;
---text-light-gray: oklab(82.968% 0 -0.00009);
+--text-gray: #e3e6eb;
+--text-light-gray: oklab(77.628% 0 -0.00009);
 --white: oklab(100% 0 -0.00011);
 --bg-gray: oklab(84.52199999999999% 0 -0.0001);
 --bg-light-gray: #f3f3f3;
@@ -18,11 +18,11 @@
 --bg-primary: #70abe9;
 --gradient-1:   oklab(11.1% 0.014 -0.053);
 --gradient-2: oklab(21.128% 0.02487 -0.09611);
---gradient-3: oklab(30.075000000000003% 0.04347 -0.11431);
+--gradient-3: oklab(26.451999999999998% 0.0143 -0.07127);
 --gradient-4:  oklab(50.160000000000004% -0.02057 -0.08331);
 --gradient-5: oklab(76.753% -0.02159 -0.06445);
 --angle: 45deg;
---gradient: oklab(11.1% 0.014 -0.053), oklab(21.128% 0.02487 -0.09611), oklab(31.6% 0.065 -0.106), oklab(50.160000000000004% -0.02057 -0.08331), oklab(76.753% -0.02159 -0.06445);
+--gradient: oklab(11.1% 0.014 -0.053), oklab(21.128% 0.02487 -0.09611), oklab(26.451999999999998% 0.0143 -0.07127), oklab(50.160000000000004% -0.02057 -0.08331), oklab(76.753% -0.02159 -0.06445);
 }
 
 
@@ -141,7 +141,7 @@ input, select, textarea {
 		-ms-transition: color .25s ease-in-out;
 		transition: color .25s ease-in-out;
 		text-decoration: underline;
-		color: #717479;
+		color: var(--text-light-gray);
 	}
 
 		a:hover {
@@ -1641,6 +1641,16 @@ input, select, textarea {
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
+
+		.brand-icons {
+			display: flex;
+			justify-content: space-evenly;
+		}
+		.icon {
+			width: 20%;
+			gap: 1rem;
+		}
+
 
 /* Button */
 
