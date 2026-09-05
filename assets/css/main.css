@@ -11,18 +11,26 @@
 --text-gray: #e3e6eb;
 --text-light-gray: oklab(77.628% 0 -0.00009);
 --white: oklab(100% 0 -0.00011);
---bg-gray: oklab(84.52199999999999% 0 -0.0001);
+--bg-gray: oklab(41.282999999999994% 0 -0.00005 / 0.712);
 --bg-light-gray: #f3f3f3;
 --bg-secondary: #6072d9;
 --bg-tertiary: #0ab142;
 --bg-primary: #70abe9;
 --gradient-1:   oklab(11.1% 0.014 -0.053);
---gradient-2: oklab(21.128% 0.02487 -0.09611);
---gradient-3: oklab(26.451999999999998% 0.0143 -0.07127);
---gradient-4:  oklab(50.160000000000004% -0.02057 -0.08331);
+--gradient-2: oklab(21.712999999999997% -0.00159 -0.09089);
+--gradient-3: oklab(28.022999999999996% 0.00303 -0.06144);
+--gradient-4:  oklab(53.488% -0.03758 -0.06428);
 --gradient-5: oklab(76.753% -0.02159 -0.06445);
 --angle: 45deg;
---gradient: oklab(11.1% 0.014 -0.053), oklab(21.128% 0.02487 -0.09611), oklab(26.451999999999998% 0.0143 -0.07127), oklab(50.160000000000004% -0.02057 -0.08331), oklab(76.753% -0.02159 -0.06445);
+--gradient: var(--gradient-1), var(--gradient-2), var(--gradient-3), var(--gradient-4), var(--gradient-5);
+
+--p: ;
+--h1: ;
+--h2: ;
+--h3: ;
+--h4: ;
+--h5: ;
+
 }
 
 body.light {
@@ -214,6 +222,10 @@ input, select, textarea {
 
 	p, ul, ol, dl, table, blockquote, form {
 		margin-bottom: 2em;
+	}
+
+	p {
+		font-size: 1.2em;
 	}
 
 /* Container */
@@ -1639,7 +1651,22 @@ input, select, textarea {
 			border-radius: 5px;
 		}
 
-		.image.fit {
+		.image.profile {
+			 display: grid;
+		     grid-template-columns: 50% 50%;
+ 			 padding: 10px;
+			 margin: 5% auto;
+}
+		.image.profile img{
+			border: solid 2px var(--bg-gray);
+		}
+
+		.image.profile p{
+			display: block;
+			margin: auto 6%;
+		}
+
+		.image.fit{
 			display: block;
 			width: 100%;
 		}
@@ -2932,6 +2959,23 @@ input, select, textarea {
 						bottom: -15px;
 						background-size: 100% 100%;
 					}
+
+					/* Hero Image */
+		.image.profile {
+			 display: block;
+ 			 padding: 10px;
+}
+		.image.profile img{
+			border: solid 2px var(--bg-gray);
+			width: 70%;
+			margin: auto
+		}
+
+		.image.profile p{
+			display: block;
+			margin: 5% auto;
+		}
+
 
 		/* Header */
 
