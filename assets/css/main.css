@@ -1915,8 +1915,6 @@ input, select, textarea {
 	}
 
 		.feature-list section {
-			border-top: solid 1px #eee;
-			padding-top: 3em;
 			padding-left: 5em;
 			position: relative;
 		}
@@ -2600,11 +2598,11 @@ input, select, textarea {
 			.feature-list {
 				max-width: 40em;
 			}
-
+/* 
 				.feature-list section {
 					padding-top: 4em;
 				}
-
+*/
 				.feature-list > .row > :first-child > section {
 					border-top: 0;
 					padding-top: 0;
@@ -2918,6 +2916,7 @@ input, select, textarea {
 			.feature-list section {
 				padding-top: 2em;
 				padding-left: 4em;
+			
 			}
 
 			.feature-list h3:before {
